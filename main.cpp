@@ -17,3 +17,23 @@ public:             // Member function prototypes
 
 // Circle member function implementation section
 
+/********************************************************
+*                   Circle::Circle                      *
+*   This is the constuctor.  It initializes the radius  *
+*   class member variable                               *
+********************************************************/
+Circle::Circle() {
+    radius = 1.0;
+}
+
+/********************************************************
+*                   Circle::calcArea                    *
+*   This function calculates and returns the Circle     *
+*   object's area.  It does not need any parameters     *
+*   because it can directly access the member variable  *
+*   radius                                              *
+********************************************************/
+double Circle::calcArea() {
+    return 3.14 * pow(radius, 2);
+}
+
