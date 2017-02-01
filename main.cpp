@@ -26,7 +26,18 @@ Circle::Circle() {
     radius = 1.0;
 }
 
-
+/********************************************************
+*                   Circle::setRadius                   *
+*   This function validates the value passed to it      *
+*   before assigning it to the radius member variable   *
+********************************************************/
+void Circle::setRadius(double r) {
+    if (r >= 0.0)
+    {
+        radius = r;
+    }
+    // else leave it set to its previous value
+}
 
 /********************************************************
 *                   Circle::calcArea                    *
